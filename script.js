@@ -6,6 +6,7 @@ const images = [
   { src: "images/blue.jpg", alt: "Very Blue Sea" }, // 1
   { src: "images/beach.jpg", alt: "Beautiful Old Caravan" }, // 2
   { src: "images/town.jpg", alt: "Peacful Town" }, // 3
+  { src: "images/trees.jpg", alt: "Amazing Lake With Trees" }, // 4
 ];
 
 // Next Image
@@ -25,7 +26,7 @@ const previous = document.getElementById("previous");
 function previousImage() {
   currentIndex--;
   if (currentIndex < 0) {
-    currentIndex = 3;
+    currentIndex = 4;
   }
   // check if index is too low and set current index to the highest number it can be
   mainimage.src = images[currentIndex].src;
