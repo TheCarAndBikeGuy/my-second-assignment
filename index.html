@@ -19,7 +19,7 @@
       aria-describedby="Thumbnails"
       tabindex="0"
     >
-      <h3 aria-describedby="Title" tabindex="0">My Photo Gallery</h3>
+      <h3 aria-describedby="Title" tabindex="0">My <span class="ocean">Ocean</span> Gallery</h3>
     </div>
     <!-- Main Image -->
     <img
@@ -30,6 +30,21 @@
       title="Large-Images"
       tabindex="0"
     />
+    <!-- Middle Buttons -->
+    <button
+      id="previous"
+      title="Previous"
+      tabindex="0"
+      class="fa-solid fa-backward"
+      aria-label="Previous Button"
+    ></button>
+    <button
+      id="next"
+      title="Next"
+      tabindex="0"
+      fa-circle-stop
+      class="fa-solid fa-forward"
+    ></button>
     <!-- Music -->
     <div class="music">
       <audio
@@ -70,20 +85,6 @@
         <button
           title="Forward"
           id="forward"
-          class="fa-solid fa-forward"
-        ></button>
-        <button
-          id="previous"
-          title="Previous"
-          tabindex="0"
-          class="fa-solid fa-backward"
-          aria-label="Previous Button"
-        ></button>
-        <button
-          id="next"
-          title="Next"
-          tabindex="0"
-          fa-circle-stop
           class="fa-solid fa-forward"
         ></button>
       </div>

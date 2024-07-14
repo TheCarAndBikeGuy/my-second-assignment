@@ -13,6 +13,11 @@ body {
 h3 {
   color: #fff;
   text-align: center;
+  text-decoration: underline;
+}
+
+.ocean {
+  color: #6CD4FF;
 }
 
 #thumbnails img {
@@ -23,13 +28,13 @@ h3 {
   position: absolute;
   padding: 10px;
   margin: 10px;
+  top: 20px;
   z-index: 1;
   border-style: solid;
   border-color: #000000;
   background: #000000;
   opacity: 0.5s;
   cursor: pointer;
-  opacity: 0 ease-in-out 1;
 }
 
 /* Images */
@@ -41,7 +46,7 @@ h3 {
   position: absolute;
 }
 
-@media (min-width: 500px) {
+@media (min-width: 800px) {
   .mainimage {
     width: 100vw;
     height: 100vh;
@@ -55,17 +60,39 @@ h3 {
 .audio {
   border-radius: 10px;
   position: absolute;
-  top: 10px;
-  right: 50px;
+  bottom: 80px;
+  right: 30px;
+  text-align: center;
+  display: inline;
 }
 
-@media (min-width: 500px) {
-  .music {
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
+@media (min-width: 998px) {
+  .audio {
+    display: block;
+    border-radius: 10px;
+    top: 10px;
+    right: 50px;
     text-align: center;
-    top: 300px;
+  }
+}
+
+.btns {
+  border-radius: 10px;
+  position: absolute;
+  bottom: 150px;
+  right: 10px;
+  text-align: center;
+  display: block;
+  width: 20px;
+}
+
+@media (min-width: 998px) {
+  .btns {
+    display: block;
+    border-radius: 10px;
+    top: 10px;
+    right: 10px;
+    text-align: center;
   }
 }
 
@@ -178,6 +205,8 @@ h3 {
   width: 100px;
   border-radius: 100px;
   transition: 0.7s ease-in-out;
+  font-size: 65px;
+  display: block;
 }
 
 #previous:hover {
@@ -186,7 +215,7 @@ h3 {
   background-color: #000000;
 }
 
-@media (min-width: 500px) {
+@media (min-width: 800px) {
   #previous {
     position: absolute;
     top: 50%;
@@ -195,7 +224,7 @@ h3 {
     width: 100px;
     border-radius: 100px;
     transition: 0.7s ease-in-out;
-    font-size: 65px;
+    font-size: 50px;
   }
 }
 
@@ -203,10 +232,12 @@ h3 {
   position: absolute;
   top: 50%;
   right: 30px;
-  height: 150px;
-  width: 150px;
+  height: 100px;
+  width: 100px;
   border-radius: 100px;
   transition: 0.7s ease-in-out;
+  font-size: 65px;
+  display: block;
 }
 
 #next:hover {
@@ -215,7 +246,7 @@ h3 {
   background-color: #000000;
 }
 
-@media (min-width: 500px) {
+@media (min-width: 800px) {
   #next {
     position: absolute;
     top: 50%;
@@ -224,6 +255,6 @@ h3 {
     width: 100px;
     border-radius: 100px;
     transition: 0.7s ease-in-out;
-    font-size: 65px;
+    font-size: 50px;
   }
 }
